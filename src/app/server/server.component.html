@@ -1,4 +1,5 @@
-<h3>Server ID is {{ serverId }} and the status is {{ serverStatus }}</h3>
+<h3>Server ID is {{ serverId }} and the status is <span [ngStyle]="{backgroundColor: getColor(), color: 'white'}">{{ serverStatus }}</span></h3>
+
 <hr />
 <label>Username</label>
 <input type="text" 
