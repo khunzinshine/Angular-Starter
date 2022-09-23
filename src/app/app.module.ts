@@ -14,13 +14,10 @@ import { ServersComponent } from './servers/servers.component';
     ServerComponent,
     WarningAlertComponent,
     SuccessalertComponent,
-    ServersComponent
+    ServersComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
