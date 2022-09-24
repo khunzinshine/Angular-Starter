@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="onShowDetail()">
+        Display Details
+      </button>
+      <p *ngIf="show">Secrect Password = khun</p>
+      <div
+        *ngFor="let countItem of count"
+        [ngStyle]="{ backgroundColor: countItem >= 5 ? 'blue' : 'transparent' }"
+        [ngClass]="{ 'text-white': countItem >= 5 }"
+      >
+        {{ countItem }}
+      </div>
+    </div>
+  </div>
+</div>
