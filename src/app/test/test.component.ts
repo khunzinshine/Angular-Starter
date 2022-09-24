@@ -11,6 +11,6 @@ export class TestComponent {
 
   onShowDetail() {
     this.show = !this.show;
-    this.count.push(this.count.length + 1);
+    this.count.push(new Date());
   }
 }

@@ -6,11 +6,11 @@
       </button>
       <p *ngIf="show">Secrect Password = khun</p>
       <div
-        *ngFor="let countItem of count"
-        [ngStyle]="{ backgroundColor: countItem >= 5 ? 'blue' : 'transparent' }"
-        [ngClass]="{ 'text-white': countItem >= 5 }"
+        *ngFor="let timeStamp of count; let i = index"
+        [ngStyle]="{ backgroundColor: i >= 5 ? 'blue' : 'transparent' }"
+        [ngClass]="{ 'text-white': i >= 5 }"
       >
-        {{ countItem }}
+        {{ timeStamp }}
       </div>
     </div>
   </div>
